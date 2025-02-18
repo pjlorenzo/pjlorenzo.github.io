@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog Post Test
-author: Pablo
+author: pablo
 tags: [Test]
 categories: Demo
 ---
@@ -15,3 +15,7 @@ Because if you put some code in your blog, you would at least make it:
 ## Search on code
 
 Search should be working even for complicated escape symbols.
+
+```c#
+var x = String.Empty();
+```
