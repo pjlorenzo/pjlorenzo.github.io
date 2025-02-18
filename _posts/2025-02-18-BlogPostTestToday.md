@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blog Post Test
+title: Blog Post Test Today
 author: Pablo
 tags: [Test]
 categories: Demo
