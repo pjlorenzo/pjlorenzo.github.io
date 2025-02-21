@@ -3,7 +3,9 @@ layout: post
 title: Blog Post Test Today
 author: pablo
 tags: [Test]
-categories: Demo
+color: rgb(80,140,22)
+position: 1
+categories: Azure
 ---
 
 Let's demo some code snippet, with some mermaid diagrams.
