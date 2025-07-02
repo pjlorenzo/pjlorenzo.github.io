@@ -2,13 +2,15 @@
 layout: post
 title: Tech Stuff example
 color: rgb(250, 50, 50)
-feature-img: "assets/img/feature-img/circuit.jpeg"
-thumbnail: "assets/img/thumbnails/feature-img/circuit.jpeg"
+feature-img: 'assets/img/feature-img/circuit.jpeg'
+thumbnail: 'assets/img/thumbnails/feature-img/circuit.jpeg'
 tags: [Highlight, Markdown]
+hide: true
 ---
 
 Let's demo some code snippet, with some mermaid diagrams.
 Because if you put some code in your blog, you would at least make it:
+
 1. Searchable
 2. Good-looking
 
@@ -34,6 +36,7 @@ function will still be working!
 ### XML
 
 Example from [W3C]
+
 ```xml
 <part number="1976">
   <name>Windscreen Wiper</name>
@@ -82,20 +85,20 @@ public class Demo {
  * Does a thing
  */
 function helloWorld(param1, param2) {
-    const example = `hello ${param1}`
-    var something = {
-        key: "value",
-        number: 1
-    };
+  const example = `hello ${param1}`;
+  var something = {
+    key: 'value',
+    number: 1,
+  };
 
-    // Do something
-    if (2.0 % 2 == something) {
-        console.log('Hello, world!');
-    } else {
-        return null;
-    }
+  // Do something
+  if (2.0 % 2 == something) {
+    console.log('Hello, world!');
+  } else {
+    return null;
+  }
 
-    // TODO comment
+  // TODO comment
 }
 ```
 
@@ -145,7 +148,6 @@ class SomeClass:
 You can also render some yaml, like this `_config.yml`:
 
 ```yml
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -163,16 +165,16 @@ You can also render some yaml, like this `_config.yml`:
 # in the templates via {{ site.myvariable }}.
 
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
+baseurl: '/Type-on-Strap'
+url: 'https://sylhare.github.io'
 
 # THEME-SPECIFIC CONFIGURATION
-title: Type on Strap                                    # site's title
-description: "A website with blog posts and pages"      # used by search engines
-avatar: assets/img/triangle.png                         # Empty for no avatar in navbar
-favicon: assets/favicon.ico                             # Icon displayed in the tab
+title: Type on Strap # site's title
+description: 'A website with blog posts and pages' # used by search engines
+avatar: assets/img/triangle.png # Empty for no avatar in navbar
+favicon: assets/favicon.ico # Icon displayed in the tab
 
-remote_theme: sylhare/Type-on-Strap                     # If using as a remote_theme in github
+remote_theme: sylhare/Type-on-Strap # If using as a remote_theme in github
 ```
 
 [W3C]: https://www.w3.org/standards/xml/core

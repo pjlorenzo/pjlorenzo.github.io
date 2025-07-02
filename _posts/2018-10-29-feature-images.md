@@ -1,25 +1,26 @@
 ---
 layout: post
 title: Feature images
-feature-img: "assets/img/feature-img/desk-messy.jpeg"
-thumbnail: "assets/img/thumbnails/feature-img/desk-messy.jpeg"
+feature-img: 'assets/img/feature-img/desk-messy.jpeg'
+thumbnail: 'assets/img/thumbnails/feature-img/desk-messy.jpeg'
 tags: [Test, Image]
 categories: Example
+hide: true
 ---
 
 Hopefully you will find enough information about how to set images in your blog here.
-This is an example of a post which includes a feature image specified in the front matter of the post. 
+This is an example of a post which includes a feature image specified in the front matter of the post.
 The feature image spans the full-width of the page, and is shown with the title on permalink pages:
 
 ```yaml
-feature-img: "assets/img/feature-img/desk-messy.jpeg"
-thumbnail: "assets/img/thumbnails/feature-img/desk-messy.jpeg" 
+feature-img: 'assets/img/feature-img/desk-messy.jpeg'
+thumbnail: 'assets/img/thumbnails/feature-img/desk-messy.jpeg'
 ```
 
 You can also use a thumbnail, a smaller version of the same image to improve loading of the page.
 The thumbnail will also be used when you share your article on other platform (linkedin, whatsapp, facebook, ...).
 
->  - And now it is working
+> - And now it is working
 
 You can also add images aligned in your post using the `aligner` include.
 Make sure to separate all of the image path from in a string separated with `,`.
@@ -33,8 +34,7 @@ It by default look into `assets/img/` so give the path from there, example:
 
 {% include aligner.html images="pexels/book-glass.jpeg,feature-img/desk-messy.jpeg" caption="A caption under the images" %}
 
-
-Here you have two images side by side, but you can set more and set the amount per columns 
+Here you have two images side by side, but you can set more and set the amount per columns
 (by specifying the number of columns or let it be automatic using `"auto"`):
 
 {% highlight ruby %}
@@ -50,9 +50,13 @@ However you can just use the Markdown way of doing it to get the image normal si
 
 {% highlight ruby %}
 {% raw %}
+
 # Markdown way
+
 ![Travel]({{ "/assets/img/pexels/computer.jpeg" | relative_url}})
+
 # Aligner with only one image
+
 {% include aligner.html images="pexels/computer.jpeg" %}
 {% endraw %}
 {% endhighlight %}

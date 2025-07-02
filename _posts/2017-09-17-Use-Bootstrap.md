@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Bootstrap"
+title: 'Bootstrap'
 bootstrap: true
 tags: [Test]
 categories: Demo
+hide: true
 ---
 
 This theme is compatible with Bootstrap if you choose to use it in your pages or posts.
@@ -17,7 +18,7 @@ Add some custom Bootstrap in the custom layout!
 
 ### Snippet example
 
-If you are new to Bootstrap you can  always check the [documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/).<br>
+If you are new to Bootstrap you can always check the [documentation](https://getbootstrap.com/docs/4.1/getting-started/introduction/).<br>
 Here is an example from [startbootstrap.com](https://startbootstrap.com/snippets/portfolio-two-column).
 
 <!-- Page Content -->
@@ -106,8 +107,8 @@ Here is a code snippet for the [documentation](https://getbootstrap.com/docs/4.0
 
 ```js
 $('#myModal').on('show.bs.modal', function (e) {
-    if (!data) return e.preventDefault() // stops modal from being shown
-})
+  if (!data) return e.preventDefault(); // stops modal from being shown
+});
 ```
 
 That's just for demo though, you would need to properly integrate your javascript in your page.

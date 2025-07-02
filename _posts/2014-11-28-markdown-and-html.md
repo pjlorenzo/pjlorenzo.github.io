@@ -4,6 +4,7 @@ title: Markdown and HTML
 tags: [Katex, Markdown]
 author: rohanchandra
 categories: Syntax
+hide: true
 ---
 
 Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdown/syntax) with inline HTML tags which makes it easier to quickly write posts with Jekyll, without having to worry too much about text formatting. A sample of the formatting follows.
@@ -11,18 +12,16 @@ Jekyll supports the use of [Markdown](http://daringfireball.net/projects/markdow
 ## Table of content
 
 <!-- To be placed at the beginning of the post, it is where the table of content will be generated -->
-* TOC
+
+- TOC
   {:toc}
-* 
-You need to put this at the beginning of the page where you want the table of content to be displayed
+- You need to put this at the beginning of the page where you want the table of content to be displayed
 
 ```html
-* TOC
-{:toc}
+* TOC {:toc}
 ```
 
 It will then render the markdown and html titles (lines that begins with `#` or using the `<h1></h1>` tages)
-
 
 ## Title
 
@@ -31,7 +30,7 @@ It will then render the markdown and html titles (lines that begins with `#` or 
 Tables have also been extended from Markdown:
 
 | First Header | Second Header |
-|--------------|---------------|
+| ------------ | ------------- |
 | Content Cell | Content Cell  |
 | Content Cell | Content Cell  |
 
@@ -40,18 +39,18 @@ Here's an example of an image, which is included using Markdown:
 ![Image of a glass on a book]({{ "/assets/img/pexels/book-glass.jpeg" | relative_url }})
 
 This is another example of list:
- 
- - list of things
-   1. Sub list
-   2. of Other things
-   3. with numbers
- - And many more
-   - Sub sub list
-     - can go on ...
-       - and on ...
-         - and on !
-   - That's it.
-   
+
+- list of things
+  1.  Sub list
+  2.  of Other things
+  3.  with numbers
+- And many more
+  - Sub sub list
+    - can go on ...
+      - and on ...
+        - and on !
+  - That's it.
+
 ### Other subtitle
 
 Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes use of Rouge by default.
@@ -59,14 +58,14 @@ Highlighting for code in Jekyll is done using Base16 or Rouge. This theme makes 
 {% highlight js %}
 // count to ten
 for (var i = 1; i <= 10; i++) {
-    console.log(i);
+console.log(i);
 }
 
 // count to twenty
 var j = 0;
 while (j < 20) {
-    j++;
-    console.log(j);
+j++;
+console.log(j);
 }
 {% endhighlight %}
 
@@ -84,7 +83,6 @@ And in your markdown file:
 $$ f(x) = \int \frac{2x^2+4x+6}{x-2} $$
 ```
 
-
 ### Expandable content
 
 Click on the expandable content to display it:
@@ -98,7 +96,7 @@ And in your markdown file:
 
 ```html
 <details>
-    <summary>Click here!</summary>
-    Now you see me
+  <summary>Click here!</summary>
+  Now you see me
 </details>
 ```
