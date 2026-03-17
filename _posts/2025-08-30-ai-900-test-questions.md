@@ -74,7 +74,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) Transparency
 - D) Accountability
 
-**Answer: A) Inclusiveness**
+**Answer:** A) Inclusiveness
 
 **Explanation:** Inclusiveness ensures that AI systems are designed to work for everyone, considering diverse user needs and abilities.
 
@@ -89,7 +89,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) Regression
 - D) Reinforcement learning
 
-**Answer: C) Regression**
+**Answer:** C) Regression
 
 **Explanation:** Regression is used to predict continuous numerical values. Classification is used for categorizing data into classes, clustering is used for grouping similar data points, and reinforcement learning is used for decision-making in dynamic environments.
 
@@ -102,7 +102,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) Targets
 - D) Outcomes
 
-**Answer: B) Features**
+**Answer:** B) Features
 
 **Explanation:** Features are the input variables used for prediction in machine learning. Labels (also called targets or outcomes) are the output variables being predicted.
 
@@ -115,7 +115,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) Automated Machine Learning
 - D) Azure Synapse Analytics
 
-**Answer: C) Automated Machine Learning**
+**Answer:** C) Automated Machine Learning
 
 **Explanation:** Automated Machine Learning (AutoML) in Azure automatically selects algorithms, performs feature engineering, and tunes hyperparameters to find the best model for your data.
 
@@ -128,7 +128,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) To reduce the computational resources required
 - D) To simplify the model architecture
 
-**Answer: B) To test the model on data it hasn't seen during training**
+**Answer:** B) To test the model on data it hasn't seen during training
 
 **Explanation:** Splitting data into training and validation datasets allows you to evaluate how well the model performs on data it hasn't seen during training, helping to detect overfitting.
 
@@ -141,7 +141,7 @@ This document contains 25 practice questions covering all domains of the AI-900 
 - C) Involves multiple layers of neural networks
 - D) Requires less computational resources
 
-**Answer: C) Involves multiple layers of neural networks**
+**Answer:** C) Involves multiple layers of neural networks
 
 **Explanation:** Deep learning involves neural networks with multiple layers (hence "deep"), allowing them to learn complex patterns. It typically requires more data and computational resources than traditional machine learning.
 
