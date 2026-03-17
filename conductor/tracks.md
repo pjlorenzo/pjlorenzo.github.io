@@ -3,3 +3,4 @@
 This file tracks all major tracks for the project. Each track has its own detailed plan in its respective folder.
 
 ---
+- [2026-03-17-aspire-observability-deep-dive](tracks/2026-03-17-aspire-observability-deep-dive/spec.md)
