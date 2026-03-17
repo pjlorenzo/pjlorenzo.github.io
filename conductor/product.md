@@ -17,6 +17,6 @@
 - **Responsive Design:** A seamless user experience across all devices, from desktop to mobile.
 
 ## Future Roadmap
-- **Performance & SEO:** Optimize the site for speed (Lighthouse scores) and improve search engine visibility.
+- [x] **Performance & SEO:** Optimize the site for speed (Lighthouse scores) and improve search engine visibility. (Completed: Mar 2026)
 - **Content Expansion:** Regularly publish high-quality technical content and keep existing study guides (e.g., AI-900) up-to-date.
 - **Technical Excellence:** Continuous refinement of the underlying Jekyll configuration and theme integration.

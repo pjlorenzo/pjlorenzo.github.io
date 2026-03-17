@@ -25,3 +25,7 @@
 - **Minification:** CSS and JavaScript files are compressed for faster loading.
 - **Image Processing:** Automatic optimization of images and thumbnail generation.
 - **Environment:** Requires Node.js and npm to run the Gulp build tasks.
+
+## Runtime Performance
+- **Resource Hints:** `dns-prefetch`, `preconnect`, and `preload` are implemented in `head.liquid` for critical assets and third-party resources.
+- **Search Optimization:** The search JSON index is optimized by removing full post content, significantly reducing file size.
