@@ -3,7 +3,7 @@
 ## Phase 1: Research and Baseline
 Establish current performance metrics and build pipeline state.
 
-- [ ] Task: Establish Performance Baselines
+- [x] Task: Establish Performance Baselines
     - [ ] Run Lighthouse audit on home page and a sample post
     - [ ] Record current build times for `bundle exec jekyll build` and `gulp`
     - [ ] Identify top 3 performance bottlenecks (e.g., large images, unminified JS)
