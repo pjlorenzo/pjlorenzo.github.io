@@ -3,9 +3,9 @@
 ## Phase 1: Preparation and Analysis
 Establish a solid baseline and identify custom modifications.
 
-- [ ] Task: Document Custom Modifications
-    - [ ] Run `git diff` to identify all local changes to theme files (e.g., in `_sass/`, `_layouts/`, `_includes/`, `assets/`)
-    - [ ] Create a detailed list of these modifications to ensure they are preserved during the upgrade
+- [x] Task: Document Custom Modifications
+    - [x] Run `git diff` to identify all local changes to theme files (e.g., in `_sass/`, `_layouts/`, `_includes/`, `assets/`)
+    - [x] Create a detailed list of these modifications to ensure they are preserved during the upgrade
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Preparation and Analysis' (Protocol in workflow.md)
 
 ## Phase 2: Theme File Upgrade

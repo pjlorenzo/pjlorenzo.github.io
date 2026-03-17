@@ -4,5 +4,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Upgrade to the latest version of Type-on-Strap**
+- [~] **Track: Upgrade to the latest version of Type-on-Strap**
   *Link: [./tracks/upgrade_type_on_strap_20260317/](./tracks/upgrade_type_on_strap_20260317/)*
