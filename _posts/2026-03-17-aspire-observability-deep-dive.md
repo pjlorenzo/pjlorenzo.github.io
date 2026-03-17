@@ -103,3 +103,23 @@ public class OrderService
 ```
 
 Because Aspire's observability is built on standard `Meter` and `Counter` types, this custom metric will **automatically show up in the Aspire Dashboard's Metrics tab**. You can then filter and visualize this data alongside your system-level metrics, giving you a holistic view of both your system's health and its business performance.
+
+## 5. Transitioning to Production
+
+One of the greatest strengths of the OTLP-based approach is how it handles the move from your local machine to the cloud.
+
+When you use a tool like **`azd` (Azure Developer CLI)** to deploy your .NET Aspire application, the infrastructure for your observability stack is automatically provisioned for you. Your OTLP traffic is redirected from your local dashboard to production-grade services like **Azure Monitor Application Insights** or a **Managed Grafana** instance.
+
+The transition is completely seamless. Because your code is already instrumented with standard OTel protocols, you don't have to change a single line of your application's logic. You can focus on the architectural decisions — like how long to retain your traces or which metrics to alert on — rather than worrying about the plumbing.
+
+## Conclusion
+
+.NET Aspire is more than just a convenient way to run your microservices locally. It is a powerful, opinionated, and highly extensible framework that makes world-class observability accessible to every .NET developer.
+
+By building on top of industry-standard protocols like OTLP and leveraging the power of .NET runtime diagnostics, Aspire provides a system that is both easy to use for beginners and robust enough for the most demanding enterprise architectures.
+
+If you're a Senior Developer or Architect, I encourage you to look beyond the dashboard and start thinking about how .NET Aspire can help you build more transparent, resilient, and observable systems from day one.
+
+---
+
+**What are your thoughts on .NET Aspire's observability features?** Have you experimented with custom instrumentation or integrated it into your production environments? Let me know in the comments below!
