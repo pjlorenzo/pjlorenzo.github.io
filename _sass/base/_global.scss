@@ -17,10 +17,6 @@ html {
   background: var(--selection);
 }
 
-::-moz-selection {
-  background: var(--selection);
-}
-
 body {
   color: var(--text);
   font-family: $font-family-main;
@@ -41,7 +37,6 @@ h6 {
   a {
     color: var(--text);
   }
-
 }
 
 h1 {
@@ -71,11 +66,11 @@ video {
   margin-right: auto;
 }
 
-img[align=left] {
+img[align='left'] {
   margin-right: 3%;
 }
 
-img[align=right] {
+img[align='right'] {
   margin-left: 3%;
 }
 
@@ -95,10 +90,15 @@ summary {
   h3 {
     font-size: 1em;
   }
-  h4, tr, th, .meta {
+  h4,
+  tr,
+  th,
+  .meta {
     font-size: 0.9em;
   }
-  p, li, td {
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
 
@@ -122,10 +122,15 @@ summary {
   h3 {
     font-size: 0.9em;
   }
-  h4, th, tr, .meta {
+  h4,
+  th,
+  tr,
+  .meta {
     font-size: 0.85em;
   }
-  p, li, td {
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
   li li {
@@ -141,7 +146,7 @@ summary {
 }
 
 blockquote {
-  border-left: 2px solid #9fd2e3;
+  border-left: 2px solid var(--blockquote-border);
   margin: 1em 1em;
   padding: 0.75em 1em;
   background-color: var(--blockquote);
@@ -215,7 +220,7 @@ ul {
 hr {
   border: 0;
   border-top: 1px solid var(--border);
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--background);
   margin: 1em 0;
 }
 
@@ -225,13 +230,15 @@ a {
 }
 
 kbd {
-  background-color: #eee;
+  background-color: var(--kbd-background);
   border-radius: 3px;
-  border: 1px solid #b4b4b4;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-  color: #333;
+  border: 1px solid var(--kbd-border);
+  box-shadow:
+    0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+  color: var(--kbd-color);
   display: inline-block;
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 700;
   line-height: 1;
   padding: 2px 4px;
@@ -269,7 +276,8 @@ details {
 }
 
 // Mermaid
-.mermaid, .language-mermaid {
+.mermaid,
+.language-mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
 

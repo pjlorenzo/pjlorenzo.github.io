@@ -25,9 +25,9 @@
   }
 
   @media screen and (max-width: $sm-break) {
-    a, p {
+    a,
+    p {
       font-size: 0.8em;
     }
   }
 }
-

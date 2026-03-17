@@ -1,14 +1,12 @@
 // To clear things when we float the element inside nav and ul
 .clear {
-  *zoom: 1;
-
   &:after {
     clear: both;
   }
 
   &:before,
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
   }
 }
@@ -41,7 +39,6 @@
     border-radius: 0.2em;
     margin-right: 0.5em;
     padding: 10px 10px;
-
   }
 
   .site-title {
@@ -90,7 +87,7 @@ nav {
 
 /* ---- Responsive ---- */
 
-@media (min-width: $break) {
+@media (min-width: $break + 1) {
   a#pull {
     display: none;
   }
@@ -103,7 +100,7 @@ nav {
 @media screen and (max-width: $break) {
   .site-header {
     img.avatar {
-      margin-top: -7px
+      margin-top: -7px;
     }
 
     .site-title {
@@ -123,7 +120,9 @@ nav {
       overflow: hidden;
 
       /* fade out, then shrink */
-      transition: opacity .25s 0s, font-size .25s 0s;
+      transition:
+        opacity 0.25s 0s,
+        font-size 0.25s 0s;
       transition-delay: 0s;
 
       &.hide {
@@ -138,7 +137,7 @@ nav {
       width: 100%;
       text-align: center;
       font-size: 1em;
-      position: relative;
+      margin: 0;
       background-color: var(--background);
       backdrop-filter: brightness(0.98);
 
@@ -148,10 +147,8 @@ nav {
 
       a {
         width: 100%;
-        margin: 0;
         display: block;
       }
-
     }
   }
 }

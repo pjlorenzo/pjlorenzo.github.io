@@ -28,7 +28,8 @@
     display: inline-block;
 
     .fa {
-      &.fa-chevron-right, &.fa-chevron-left {
+      &.fa-chevron-right,
+      &.fa-chevron-left {
         font-size: initial;
       }
     }
