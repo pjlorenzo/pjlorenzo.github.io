@@ -26,10 +26,10 @@ Perform the full file override while carefully managing customizations.
 ## Phase 3: Configuration and Build Optimization
 Refine project settings and verify the new build pipeline.
 
-- [ ] Task: Update Project Configuration
+- [~] Task: Update Project Configuration
     - [ ] Review `_config.yml` and add any new theme-specific configuration options
     - [ ] Ensure `remote_theme` or `theme` settings are correctly configured for local usage
-- [ ] Task: Verify Build and Asset Optimization
+- [~] Task: Verify Build and Asset Optimization
     - [ ] Run `npm install` in the `assets/` directory to update dependencies
     - [ ] Execute `npx gulp` to verify the asset pipeline and minification
     - [ ] Run `bundle exec jekyll build` to ensure the site builds correctly
