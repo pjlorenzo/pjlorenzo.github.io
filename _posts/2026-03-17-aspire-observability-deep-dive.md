@@ -61,3 +61,45 @@ graph LR
 ```
 
 In your local environment, the flow is simplified directly to the Dashboard. However, the exact same OTLP-based approach is what allows you to seamlessly transition to a production-grade collector (like the OpenTelemetry Collector) without changing a single line of application code.
+
+## 3. The Engine Room: Microsoft.Extensions.Diagnostics
+
+The secret to .NET Aspire's observability is its tight integration with the **Microsoft.Extensions.Diagnostics** ecosystem.
+
+Behind the scenes, Aspire is not implementing its own custom tracing or metrics engine. Instead, it is a highly opinionated and well-configured wrapper around standard .NET primitives.
+
+### ActivitySource and Meter
+
+Aspire's distributed tracing is built on `ActivitySource`, and its metrics are built on `Meter`. These are the standard .NET types that provide the backbone for OTel instrumentation.
+
+When you call `AddServiceDefaults()`, Aspire performs several critical tasks:
+
+-   Configures OTLP exporters for traces and metrics.
+-   Applies **Semantic Conventions**: It ensures that standard tags like `http.method` and `http.route` are consistent across your entire distributed system.
+-   Registers default listeners for commonly used libraries, such as `HttpClient`, `SqlClient`, and Entity Framework Core.
+
+By using standard .NET diagnostics, Aspire ensures that any library already compatible with OpenTelemetry will "just work" when plugged into an Aspire-based system.
+
+## 4. Extending the Magic: Custom Instrumentation
+
+While Aspire's default instrumentation is impressive, the real power lies in how easy it is to add your own custom telemetry. Because Aspire uses standard .NET primitives, you don't need any Aspire-specific knowledge to instrument your business logic.
+
+### Adding a Custom Counter
+
+Let's say you want to track how many times a particular business event occurs, such as an order being placed. You can do this with just a few lines of standard .NET code:
+
+```csharp
+public class OrderService
+{
+    private static readonly Meter OrderMeter = new("MyCompany.OrderService");
+    private static readonly Counter<int> OrdersPlacedCounter = OrderMeter.CreateCounter<int>("orders.placed");
+
+    public void PlaceOrder(string region)
+    {
+        // Business logic...
+        OrdersPlacedCounter.Add(1, new TagList { { "region", region } });
+    }
+}
+```
+
+Because Aspire's observability is built on standard `Meter` and `Counter` types, this custom metric will **automatically show up in the Aspire Dashboard's Metrics tab**. You can then filter and visualize this data alongside your system-level metrics, giving you a holistic view of both your system's health and its business performance.
