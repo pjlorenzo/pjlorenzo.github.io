@@ -38,10 +38,10 @@ Refine project settings and verify the new build pipeline.
 ## Phase 4: Final Verification and Documentation
 Validate the upgrade and update project-level guides.
 
-- [ ] Task: Visual and Functional Regression Testing
+- [~] Task: Visual and Functional Regression Testing
     - [ ] Verify the home page, blog posts, portfolio, and gallery for correct rendering
     - [ ] Test interactive features (e.g., dark mode toggle, search, Mermaid diagrams)
-- [ ] Task: Update Project Documentation
+- [~] Task: Update Project Documentation
     - [ ] Update `GEMINI.md` with any changes to the build process or requirements
     - [ ] Document the successful upgrade in the track's metadata
 - [ ] Task: Conductor - User Manual Verification 'Phase 4: Final Verification and Documentation' (Protocol in workflow.md)
