@@ -8,8 +8,7 @@
         "tags"     : "{{ post.tags | join: ', ' | prepend: " " }}",
         "url"      : "{{ post.url | relative_url }}",
         "date"     : "{{ post.date | date: dateFormat }}",
-        "excerpt"  : {{ post.content | strip_html | strip_newlines | strip | escape | truncate: '250' | escape | jsonify }},
-        "content"  : {{ post.content | strip_html | strip_newlines | strip | escape | jsonify }}
+        "excerpt"  : {{ post.content | strip_html | strip_newlines | strip | escape | truncate: '250' | escape | jsonify }}
     {% endunless %}
     }{% unless forloop.last %},{% endunless %}
 {% endfor %}
@@ -22,10 +21,9 @@
         "tags"     : "{{ page.tags | join: ', ' | prepend: " " }}",
         "url"      : "{{ page.url | relative_url }}",
         "date"     : "{{ page.date | date: dateFormat | default: "N/A" }}",
-        "excerpt"  : {{ page.content | strip_html | strip_newlines | strip | escape | truncate: '250' | escape | jsonify }},
-        "content"  : {{ page.content | strip_html | strip_newlines | strip | escape | jsonify }}
-    {% endunless %}
-    }{% unless forloop.last %},{% endunless %}
+        "excerpt"  : {{ page.content | strip_html | strip_newlines | strip | escape | truncate: '250' | jsonify }}
+        {% endunless %}
+        }{% unless forloop.last %},{% endunless %}
 {% endfor %}
 {% for collection in site.collections %}
     {% unless collection.label == 'posts' or site[collection.label].size == 0 %}
@@ -37,11 +35,9 @@
                 "tags"     : "{{ page.tags | join: ', ' | prepend: " " }}",
                 "url"      : "{{ page.url | relative_url }}",
                 "date"     : "{{ page.date | date: dateFormat | default: "N/A" }}",
-                "excerpt"  : {{ page.content | strip_html | strip_newlines | strip | escape | truncate: '250' | jsonify }},
-                "content"  : {{ page.content | strip_html | strip_newlines | strip | escape | jsonify }}
-            {% endif %}
-            }
-        {% endfor %}
-    {% endunless %}
+                "excerpt"  : {{ page.content | strip_html | strip_newlines | strip | escape | truncate: '250' | jsonify }}
+                {% endif %}
+                }
+                {% endfor %}    {% endunless %}
 {% endfor %}
 ]
