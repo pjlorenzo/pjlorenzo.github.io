@@ -19,4 +19,4 @@
 ## Future Roadmap
 - [x] **Performance & SEO:** Optimize the site for speed (Lighthouse scores) and improve search engine visibility. (Completed: Mar 2026)
 - **Content Expansion:** Regularly publish high-quality technical content and keep existing study guides (e.g., AI-900) up-to-date.
-- **Technical Excellence:** Continuous refinement of the underlying Jekyll configuration and theme integration.
+- [x] **Technical Excellence:** Continuous refinement of the underlying Jekyll configuration and theme integration. (Upgraded Type-on-Strap: Mar 2026)
