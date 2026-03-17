@@ -39,6 +39,7 @@ jekyll-theme-type-on-strap.gemspec
 .github/tests/coverage/
 
 # Misc
+.worktrees/
 *-test.md
 *copy.md
 test/*
