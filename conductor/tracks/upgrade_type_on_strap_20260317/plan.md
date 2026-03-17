@@ -11,16 +11,16 @@ Establish a solid baseline and identify custom modifications.
 ## Phase 2: Theme File Upgrade
 Perform the full file override while carefully managing customizations.
 
-- [ ] Task: Update Assets and Gulp Pipeline
-    - [ ] Update `assets/package.json` with latest dependencies
-    - [ ] Update `assets/gulpfile.js` with latest theme tasks
-    - [ ] Update `assets/css/main.scss` and other asset-level stylesheets, preserving local custom styles
-- [ ] Task: Update Styles (Sass)
-    - [ ] Update files in `_sass/` to the latest theme versions
-    - [ ] Carefully merge local Sass overrides back into the updated theme files
-- [ ] Task: Update Layouts and Includes (Liquid)
-    - [ ] Update files in `_layouts/` and `_includes/` to the latest theme versions
-    - [ ] Reintegrate any custom Liquid logic or site-specific template changes
+- [x] Task: Update Assets and Gulp Pipeline
+    - [x] Update `assets/package.json` with latest dependencies
+    - [x] Update `assets/gulpfile.js` with latest theme tasks
+    - [x] Update `assets/css/main.scss` and other asset-level stylesheets, preserving local custom styles
+- [x] Task: Update Styles (Sass)
+    - [x] Update files in `_sass/` to the latest theme versions
+    - [x] Carefully merge local Sass overrides back into the updated theme files
+- [x] Task: Update Layouts and Includes (Liquid)
+    - [x] Update files in `_layouts/` and `_includes/` to the latest theme versions
+    - [x] Reintegrate any custom Liquid logic or site-specific template changes
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: Theme File Upgrade' (Protocol in workflow.md)
 
 ## Phase 3: Configuration and Build Optimization
