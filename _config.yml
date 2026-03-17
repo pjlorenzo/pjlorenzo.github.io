@@ -59,7 +59,10 @@ exclude:
     '.idea',
     'vendor/*',
     'assets/node_modules/*',
-    conductor/*,
+    'conductor/*',
+    '.github/*',
+    'GEMINI.md',
+    '.git/*',
   ]
 
 # theme: type-on-strap                                  # if using the theme as a jekyll theme gem
