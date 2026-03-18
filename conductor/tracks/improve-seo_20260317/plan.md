@@ -21,14 +21,14 @@
     - [x] **Green Phase:** Update the front matter of `index.html` and the most recent 3-5 blog posts with descriptive, keyword-rich meta descriptions and titles.
 - [x] **Task: Conductor - User Manual Verification 'Phase 2: Metadata & Plugin Enhancement' (Protocol in workflow.md)**
 
-## Phase 3: Structured Data (JSON-LD)
+## Phase 3: Structured Data (JSON-LD) [checkpoint: c476f37]
 - [x] **Task: Implement JSON-LD for Blog Posts** e7cf506
     - [x] **Red Phase:** Create a test to verify the presence of `application/ld+json` script tags in blog post HTML. Run and verify failure.
     - [x] **Green Phase:** Enhance `_includes/default/head.liquid` or a new include to output JSON-LD for `BlogPosting` and `Person` schemas.
 - [x] **Task: Implement JSON-LD for the Home Page** e7cf506
     - [x] **Red Phase:** Run the schema validation test on `index.html`.
     - [x] **Green Phase:** Add `WebSite` and `Person` schema markup specifically for the home page.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 3: Structured Data (JSON-LD)' (Protocol in workflow.md)**
+- [x] **Task: Conductor - User Manual Verification 'Phase 3: Structured Data (JSON-LD)' (Protocol in workflow.md)**
 
 ## Phase 4: Final Validation & Checkpoint
 - [ ] **Task: Final SEO Audit & Verification**
