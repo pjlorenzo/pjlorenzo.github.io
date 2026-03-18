@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ".NET Aspire Observability: From Zero-Config Magic to OpenTelemetry Protocols"
+description: "Explore the internals of .NET Aspire's observability features, from the AddServiceDefaults magic to underlying OpenTelemetry protocols and .NET runtime diagnostics."
 feature-img: 'assets/img/feature-img/circuit.jpeg'
 thumbnail: 'assets/img/thumbnails/feature-img/circuit.jpeg'
 tags: [Aspire, .NET, OpenTelemetry, Observability, Architecture]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AI-900 - Comprehensive Study Guide
+description: "Master the Microsoft Azure AI Fundamentals (AI-900) exam with this comprehensive study guide covering all domains, from computer vision to generative AI."
 feature-img: 'assets/img/feature-img/circuit.jpeg'
 thumbnail: 'assets/img/thumbnails/feature-img/circuit.jpeg'
 tags: [Azure, Certifications, AI-900, Study Guide]
