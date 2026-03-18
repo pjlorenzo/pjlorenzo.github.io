@@ -4,9 +4,15 @@ url: 'https://buildingtheinvisible.io/'
 
 # THEME-SPECIFIC CONFIGURATION
 title: Building the Invisible # site's title
-description: 'A website with blog posts and pages' # used by search engines
+description: 'Crafting Robust, Scalable, and Secure Systems with C#, .NET Core, Cloud, and Beyond. A technical blog by Pablo Lorenzo.' # used by search engines
 avatar: assets/img/triangle.png # Empty for no avatar in navbar
 favicon: assets/favicon.ico # Icon displayed in the tab
+author: 'Pablo Lorenzo'
+social:
+  name: 'Pablo Lorenzo'
+  links:
+    - https://github.com/pjlorenzo
+    - https://www.linkedin.com/in/pablolorenzo/
 
 # Header and footer text
 header_text: Crafting Robust, Scalable, and Secure Systems with C#, .NET Core, Cloud, and Beyond # Change Blog header text
