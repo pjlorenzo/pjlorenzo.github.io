@@ -15,7 +15,7 @@
 **Files:**
 - Create: `_posts/2026-03-17-aspire-observability-deep-dive.md`
 
-- [ ] **Step 1: Create the post file with initial front matter**
+- [x] **Step 1: Create the post file with initial front matter**
 
 ```markdown
 ---
@@ -32,12 +32,12 @@ tags: [Aspire, .NET, OpenTelemetry, Observability, Architecture]
 ...
 ```
 
-- [ ] **Step 2: Run Jekyll locally to verify the post is visible**
+- [x] **Step 2: Run Jekyll locally to verify the post is visible**
 
 Run: `bundle exec jekyll serve`
 Expected: Post appears at `http://localhost:4000/blog/2026/03/17/aspire-observability-deep-dive/` (or similar URL).
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
 
 ```bash
 git add _posts/2026-03-17-aspire-observability-deep-dive.md
@@ -51,13 +51,13 @@ git commit -m "chore: scaffold Aspire observability post"
 **Files:**
 - Modify: `_posts/2026-03-17-aspire-observability-deep-dive.md`
 
-- [ ] **Step 1: Write "The Magic of Zero-Config" section**
+- [x] **Step 1: Write "The Magic of Zero-Config" section**
 Include a code snippet of `AddServiceDefaults()` and describe the developer experience.
 
-- [ ] **Step 2: Write "Peeling Back the Layers: The OTLP Protocol" section**
+- [x] **Step 2: Write "Peeling Back the Layers: The OTLP Protocol" section**
 Explain the role of the Aspire Dashboard as an OTLP endpoint and the environment variables involved.
 
-- [ ] **Step 3: Add Mermaid diagram for the OTLP flow**
+- [x] **Step 3: Add Mermaid diagram for the OTLP flow**
 
 ```mermaid
 graph LR
@@ -66,11 +66,11 @@ graph LR
     Coll --> Grafana[Grafana/Prometheus]
 ```
 
-- [ ] **Step 4: Verify rendering**
+- [x] **Step 4: Verify rendering**
 
 Check browser for Mermaid diagram and text clarity.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git commit -am "feat: add magic and OTLP sections"
@@ -83,10 +83,10 @@ git commit -am "feat: add magic and OTLP sections"
 **Files:**
 - Modify: `_posts/2026-03-17-aspire-observability-deep-dive.md`
 
-- [ ] **Step 1: Write "The Engine Room: Microsoft.Extensions.Diagnostics" section**
+- [x] **Step 1: Write "The Engine Room: Microsoft.Extensions.Diagnostics" section**
 Deep dive into `ActivitySource` and `Meter` usage within the Aspire SDK.
 
-- [ ] **Step 2: Write "Extending the Magic" section with code sample**
+- [x] **Step 2: Write "Extending the Magic" section with code sample**
 Add a code snippet showing a custom `Counter` or `Histogram`.
 
 ```csharp
@@ -96,11 +96,11 @@ var counter = meter.CreateCounter<int>("orders.placed");
 counter.Add(1, new TagList { { "region", "eu-west-1" } });
 ```
 
-- [ ] **Step 3: Verify code highlighting**
+- [x] **Step 3: Verify code highlighting**
 
 Check browser to ensure C# snippets are highlighted correctly.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git commit -am "feat: add internals and custom instrumentation sections"
@@ -113,15 +113,15 @@ git commit -am "feat: add internals and custom instrumentation sections"
 **Files:**
 - Modify: `_posts/2026-03-17-aspire-observability-deep-dive.md`
 
-- [ ] **Step 1: Write "Transitioning to Production" section**
+- [x] **Step 1: Write "Transitioning to Production" section**
 Discuss `azd deploy` and scaling to Azure Monitor/Managed Grafana.
 
-- [ ] **Step 2: Write Conclusion and final polish**
+- [x] **Step 2: Write Conclusion and final polish**
 Summarize the key takeaways and encourage feedback.
 
-- [ ] **Step 3: Run final spellcheck and formatting check**
+- [x] **Step 3: Run final spellcheck and formatting check**
 
-- [ ] **Step 4: Commit and finalize**
+- [x] **Step 4: Commit and finalize**
 
 ```bash
 git commit -am "feat: complete Aspire observability post"
