@@ -22,12 +22,12 @@
 - [x] **Task: Conductor - User Manual Verification 'Phase 2: Metadata & Plugin Enhancement' (Protocol in workflow.md)**
 
 ## Phase 3: Structured Data (JSON-LD)
-- [ ] **Task: Implement JSON-LD for Blog Posts**
-    - [ ] **Red Phase:** Create a test to verify the presence of `application/ld+json` script tags in blog post HTML. Run and verify failure.
-    - [ ] **Green Phase:** Enhance `_includes/default/head.liquid` or a new include to output JSON-LD for `BlogPosting` and `Person` schemas.
-- [ ] **Task: Implement JSON-LD for the Home Page**
-    - [ ] **Red Phase:** Run the schema validation test on `index.html`.
-    - [ ] **Green Phase:** Add `WebSite` and `Person` schema markup specifically for the home page.
+- [x] **Task: Implement JSON-LD for Blog Posts** e7cf506
+    - [x] **Red Phase:** Create a test to verify the presence of `application/ld+json` script tags in blog post HTML. Run and verify failure.
+    - [x] **Green Phase:** Enhance `_includes/default/head.liquid` or a new include to output JSON-LD for `BlogPosting` and `Person` schemas.
+- [x] **Task: Implement JSON-LD for the Home Page** e7cf506
+    - [x] **Red Phase:** Run the schema validation test on `index.html`.
+    - [x] **Green Phase:** Add `WebSite` and `Person` schema markup specifically for the home page.
 - [ ] **Task: Conductor - User Manual Verification 'Phase 3: Structured Data (JSON-LD)' (Protocol in workflow.md)**
 
 ## Phase 4: Final Validation & Checkpoint
