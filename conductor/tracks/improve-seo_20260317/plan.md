@@ -2,14 +2,14 @@
 
 **Goal:** Enhance the site's search engine visibility through meta-tag optimization, structured data (JSON-LD), and improved crawlability.
 
-## Phase 1: Foundation & Initial Audit
+## Phase 1: Foundation & Initial Audit [checkpoint: 73edae1]
 - [x] **Task: Baseline SEO Audit**
     - [x] Run Google Lighthouse SEO audit on the Home Page and latest blog posts.
     - [x] Document the baseline scores and identified issues.
 - [x] **Task: Sitemap & Robots.txt Verification** 3ee48a3
     - [x] Verify the current `sitemap.xml` generation logic (jekyll-sitemap plugin).
     - [x] Review and optimize `robots.txt` to ensure proper crawling.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 1: Foundation & Initial Audit' (Protocol in workflow.md)**
+- [x] **Task: Conductor - User Manual Verification 'Phase 1: Foundation & Initial Audit' (Protocol in workflow.md)**
 
 ## Phase 2: Metadata & Plugin Enhancement
 - [ ] **Task: Enhance jekyll-seo-tag Configuration**
