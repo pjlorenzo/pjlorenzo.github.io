@@ -11,15 +11,15 @@
     - [x] Review and optimize `robots.txt` to ensure proper crawling.
 - [x] **Task: Conductor - User Manual Verification 'Phase 1: Foundation & Initial Audit' (Protocol in workflow.md)**
 
-## Phase 2: Metadata & Plugin Enhancement
+## Phase 2: Metadata & Plugin Enhancement [checkpoint: b129b70]
 - [x] **Task: Enhance jekyll-seo-tag Configuration** f07354b
-    - [ ] **Red Phase:** Create a validation script (e.g., using `grep` or a small Node.js script) to check for missing meta tags in `_site/`. Run and verify failure.
-    - [ ] **Green Phase:** Update `_config.yml` with comprehensive SEO defaults (title, description, author, social handles).
-    - [ ] **Green Phase:** Ensure `jekyll-seo-tag` is correctly included in `head.liquid`.
+    - [x] **Red Phase:** Create a validation script (e.g., using `grep` or a small Node.js script) to check for missing meta tags in `_site/`. Run and verify failure.
+    - [x] **Green Phase:** Update `_config.yml` with comprehensive SEO defaults (title, description, author, social handles).
+    - [x] **Green Phase:** Ensure `jekyll-seo-tag` is correctly included in `head.liquid`.
 - [x] **Task: Optimize Home Page & Blog Post Metadata** 2649427
-    - [ ] **Red Phase:** Run the validation script on specific pages to verify missing keywords/descriptions.
-    - [ ] **Green Phase:** Update the front matter of `index.html` and the most recent 3-5 blog posts with descriptive, keyword-rich meta descriptions and titles.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 2: Metadata & Plugin Enhancement' (Protocol in workflow.md)**
+    - [x] **Red Phase:** Run the validation script on specific pages to verify missing keywords/descriptions.
+    - [x] **Green Phase:** Update the front matter of `index.html` and the most recent 3-5 blog posts with descriptive, keyword-rich meta descriptions and titles.
+- [x] **Task: Conductor - User Manual Verification 'Phase 2: Metadata & Plugin Enhancement' (Protocol in workflow.md)**
 
 ## Phase 3: Structured Data (JSON-LD)
 - [ ] **Task: Implement JSON-LD for Blog Posts**
