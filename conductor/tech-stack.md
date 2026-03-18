@@ -14,6 +14,7 @@
 - **jekyll-paginate:** For blog pagination logic.
 - **jekyll-seo-tag:** For search engine optimization and metadata.
 - **jekyll-feed:** For generating a site-wide RSS feed.
+- **jekyll-sitemap:** Automatically generates a sitemap.xml for better crawling.
 
 ## Frontend Libraries and Integration
 - **Simple-Jekyll-Search:** Provides the client-side search functionality.
@@ -29,3 +30,4 @@
 ## Runtime Performance
 - **Resource Hints:** `dns-prefetch`, `preconnect`, and `preload` are implemented in `head.liquid` for critical assets and third-party resources.
 - **Search Optimization:** The search JSON index is optimized by removing full post content, significantly reducing file size.
+- **Structured Data (JSON-LD):** Integrated schema markup (Person, BlogPosting, WebSite) in the head for enhanced search engine understanding and rich results.
