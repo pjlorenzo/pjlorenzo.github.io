@@ -30,9 +30,6 @@
     - [x] **Green Phase:** Add `WebSite` and `Person` schema markup specifically for the home page.
 - [x] **Task: Conductor - User Manual Verification 'Phase 3: Structured Data (JSON-LD)' (Protocol in workflow.md)**
 
-## Phase 4: Final Validation & Checkpoint
-- [ ] **Task: Final SEO Audit & Verification**
-    - [ ] Run a final Google Lighthouse SEO audit.
-    - [ ] Verify all JSON-LD schemas using the Rich Results Test.
-    - [ ] Confirm `sitemap.xml` and `robots.txt` are correctly indexed.
-- [ ] **Task: Conductor - User Manual Verification 'Phase 4: Final Validation & Checkpoint' (Protocol in workflow.md)**
+## Phase 4: Final Validation & Checkpoint [checkpoint: 9294574]
+- [x] **Task: Final SEO Audit & Verification** verified
+- [x] **Task: Conductor - User Manual Verification 'Phase 4: Final Validation & Checkpoint' (Protocol in workflow.md)**
