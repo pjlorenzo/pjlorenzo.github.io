@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ".NET Aspire Observability: From Zero-Config Magic to OpenTelemetry Protocols"
+title: '.NET Aspire Observability: From Zero-Config Magic to OpenTelemetry Protocols'
 description: "Explore the internals of .NET Aspire's observability features, from the AddServiceDefaults magic to underlying OpenTelemetry protocols and .NET runtime diagnostics."
-feature-img: 'assets/img/feature-img/circuit.jpeg'
-thumbnail: 'assets/img/thumbnails/feature-img/circuit.jpeg'
+feature-img: 'assets/img/feature-img/aspireobservability.png'
+thumbnail: 'assets/img/thumbnails/feature-img/aspireobservability.png'
 tags: [Aspire, .NET, OpenTelemetry, Observability, Architecture]
 ---
 
@@ -29,9 +29,9 @@ builder.AddServiceDefaults();
 
 Behind this single extension method lies an entire world of pre-configured observability. When you run your Aspire application, the **Aspire Dashboard** automatically populates with:
 
--   **Structured Logs**: No more grepping through console output.
--   **Distributed Traces**: See how a request travels from your frontend to backend APIs and databases.
--   **Metrics**: Real-time performance counters (CPU, memory, request rates) visualized in the browser.
+- **Structured Logs**: No more grepping through console output.
+- **Distributed Traces**: See how a request travels from your frontend to backend APIs and databases.
+- **Metrics**: Real-time performance counters (CPU, memory, request rates) visualized in the browser.
 
 The immediate payoff is incredible. Within minutes, you have a better observability setup than many systems that have been in production for years. But for a Senior Developer or Architect, "magic" is often a word that triggers a healthy skepticism. To truly trust and extend this system, we need to understand the underlying mechanics.
 
@@ -47,8 +47,8 @@ In your local development environment, the **Aspire Dashboard acts as an OTLP en
 
 This integration is driven by standard OTel environment variables that Aspire injects during service startup. Two of the most critical are:
 
--   `OTEL_EXPORTER_OTLP_ENDPOINT`: Tells the app where to send its data (e.g., `http://localhost:18889`).
--   `OTEL_SERVICE_NAME`: Ensures your service is correctly identified in the dashboard.
+- `OTEL_EXPORTER_OTLP_ENDPOINT`: Tells the app where to send its data (e.g., `http://localhost:18889`).
+- `OTEL_SERVICE_NAME`: Ensures your service is correctly identified in the dashboard.
 
 ### Visualizing the Flow
 
@@ -75,9 +75,9 @@ Aspire's distributed tracing is built on `ActivitySource`, and its metrics are b
 
 When you call `AddServiceDefaults()`, Aspire performs several critical tasks:
 
--   Configures OTLP exporters for traces and metrics.
--   Applies **Semantic Conventions**: It ensures that standard tags like `http.method` and `http.route` are consistent across your entire distributed system.
--   Registers default listeners for commonly used libraries, such as `HttpClient`, `SqlClient`, and Entity Framework Core.
+- Configures OTLP exporters for traces and metrics.
+- Applies **Semantic Conventions**: It ensures that standard tags like `http.method` and `http.route` are consistent across your entire distributed system.
+- Registers default listeners for commonly used libraries, such as `HttpClient`, `SqlClient`, and Entity Framework Core.
 
 By using standard .NET diagnostics, Aspire ensures that any library already compatible with OpenTelemetry will "just work" when plugged into an Aspire-based system.
 
