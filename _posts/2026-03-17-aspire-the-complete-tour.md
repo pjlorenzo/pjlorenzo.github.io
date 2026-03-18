@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ".NET Aspire: The Complete Tour — From YAML Hell to Hero Observability"
-description: "Take a comprehensive tour of .NET Aspire, exploring how it replaces YAML orchestration with C# and provides zero-config observability for distributed systems."
-feature-img: 'assets/img/feature-img/circuit.jpeg'
-thumbnail: 'assets/img/thumbnails/feature-img/circuit.jpeg'
+title: '.NET Aspire: The Complete Tour — From YAML Hell to Hero Observability'
+description: 'Take a comprehensive tour of .NET Aspire, exploring how it replaces YAML orchestration with C# and provides zero-config observability for distributed systems.'
+feature-img: 'assets/img/feature-img/aspirecompletetour.png'
+thumbnail: 'assets/img/thumbnails/feature-img/aspirecompletetour.png'
 tags: [Aspire, .NET, Cloud-Native, DX, Architecture]
 ---
 
