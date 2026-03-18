@@ -8,5 +8,5 @@ This file tracks all major tracks for the project. Each track has its own detail
 
 ---
 
-- [ ] **Track: Improve SEO for the website**
+- [x] **Track: Improve SEO for the website**
 *Link: [./tracks/improve-seo_20260317/](./tracks/improve-seo_20260317/)*
